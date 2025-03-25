@@ -15,8 +15,6 @@ public class LoginTest extends BaseTest {
     LoginPage loginPage;
     DashboardPage dashboardPage;
 
-
-
     @Test
     public void testLoggingIntoApplication() {
         test = ExtentManager.createTest("Test Login Functionality");

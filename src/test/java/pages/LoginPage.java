@@ -3,13 +3,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends BasePage {
-    WebDriver driver;
 
     // Locators
     private By usernameField = By.name("username");
     private By passwordField = By.name("password");
     private By loginButton = By.tagName("button");
-
+    private By errorMessage = By.xpath("//p[text()='Invalid credentials']");
     // Constructor
     public LoginPage(WebDriver driver) {
         super(driver); // Call BasePage constructor
@@ -28,6 +27,8 @@ public class LoginPage extends BasePage {
         click(loginButton);
     }
 
-
+    public String getErrorMessage() {
+        return getText(errorMessage);
+    }
 
 }
