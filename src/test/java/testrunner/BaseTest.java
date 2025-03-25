@@ -43,8 +43,8 @@ public class BaseTest {
 
     @AfterClass
     public void tearDown() {
-        //logger.info("Closing the browser...");
-        //driver.quit();
+        logger.info("Closing the browser...");
+        driver.quit();
         ExtentManager.flushReport();
     }
 }
