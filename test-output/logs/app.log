@@ -227,3 +227,106 @@
 2025-03-25 12:32:31 [main] INFO  testrunner.BaseTest - Entering login credentials...
 2025-03-25 12:32:32 [main] INFO  testrunner.BaseTest - Checking dashboard page.
 2025-03-25 12:32:33 [main] INFO  testrunner.BaseTest - Checking admin page.
+2025-03-25 14:53:34 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-25 14:53:40 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-25 14:53:40 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-25 14:53:41 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-26 12:24:53 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-26 12:24:59 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-26 12:24:59 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-26 12:25:00 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-26 12:25:02 [main] INFO  testrunner.BaseTest - Checking admin page.
+2025-03-26 12:25:03 [main] INFO  testrunner.BaseTest - On the add admin page.
+2025-03-26 12:25:14 [main] ERROR testrunner.BaseTest - Test Failed: testAddAdmin
+2025-03-26 12:25:15 [main] INFO  testrunner.BaseTest - Screenshot captured: test-output/screenshots/testAddAdmin_20250326_122514.png
+2025-03-26 12:29:09 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-26 12:29:13 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-26 12:29:13 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-26 12:29:14 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-26 12:29:16 [main] INFO  testrunner.BaseTest - Checking admin page.
+2025-03-26 12:29:17 [main] INFO  testrunner.BaseTest - On the add admin page.
+2025-03-26 12:29:28 [main] ERROR testrunner.BaseTest - Test Failed: testAddAdmin
+2025-03-26 12:29:28 [main] INFO  testrunner.BaseTest - Screenshot captured: test-output/screenshots/testAddAdmin_20250326_122928.png
+2025-03-26 12:39:11 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-26 12:39:16 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-26 12:39:16 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-26 12:39:17 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-26 12:39:18 [main] INFO  testrunner.BaseTest - Checking admin page.
+2025-03-26 12:39:19 [main] INFO  testrunner.BaseTest - On the add admin page.
+2025-03-26 12:39:20 [main] ERROR testrunner.BaseTest - Test Failed: testAddAdmin
+2025-03-26 12:39:20 [main] INFO  testrunner.BaseTest - Screenshot captured: test-output/screenshots/testAddAdmin_20250326_123920.png
+2025-03-26 20:43:18 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-26 20:43:25 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-26 20:43:25 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-26 20:43:27 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-26 20:43:28 [main] INFO  testrunner.BaseTest - Checking admin page.
+2025-03-26 20:43:29 [main] INFO  testrunner.BaseTest - On the add admin page.
+2025-03-26 20:43:30 [main] INFO  testrunner.BaseTest - Submitted admin user information.
+2025-03-26 20:43:30 [main] INFO  testrunner.BaseTest - Checking on admin page the newly added user.
+2025-03-26 20:44:22 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-26 20:44:27 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-26 20:44:27 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-26 20:44:28 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-26 20:44:30 [main] INFO  testrunner.BaseTest - Checking admin page.
+2025-03-26 20:44:31 [main] INFO  testrunner.BaseTest - On the add admin page.
+2025-03-26 20:44:32 [main] INFO  testrunner.BaseTest - Submitted admin user information.
+2025-03-26 20:44:32 [main] INFO  testrunner.BaseTest - Checking on admin page the newly added user.
+2025-03-26 20:45:19 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-26 20:45:24 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-26 20:45:24 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-26 20:45:25 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-26 20:45:27 [main] INFO  testrunner.BaseTest - Checking admin page.
+2025-03-26 20:45:28 [main] INFO  testrunner.BaseTest - On the add admin page.
+2025-03-26 20:45:54 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-26 20:45:59 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-26 20:45:59 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-26 20:46:00 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-26 20:46:02 [main] INFO  testrunner.BaseTest - Checking admin page.
+2025-03-26 20:46:03 [main] INFO  testrunner.BaseTest - On the add admin page.
+2025-03-26 20:46:27 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-26 20:46:32 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-26 20:46:32 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-26 20:46:34 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-26 20:46:35 [main] INFO  testrunner.BaseTest - Checking admin page.
+2025-03-26 20:46:36 [main] INFO  testrunner.BaseTest - On the add admin page.
+2025-03-26 20:47:13 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-26 20:47:18 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-26 20:47:19 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-26 20:47:20 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-26 20:47:21 [main] INFO  testrunner.BaseTest - Checking admin page.
+2025-03-26 20:47:23 [main] INFO  testrunner.BaseTest - On the add admin page.
+2025-03-26 20:47:42 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-26 20:47:47 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-26 20:47:47 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-26 20:47:47 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-26 20:47:49 [main] INFO  testrunner.BaseTest - Checking admin page.
+2025-03-26 20:47:50 [main] INFO  testrunner.BaseTest - On the add admin page.
+2025-03-26 20:49:48 [main] ERROR testrunner.BaseTest - Test Failed: testAddAdmin
+2025-03-26 20:49:58 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-26 20:50:03 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-26 20:50:04 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-26 20:50:04 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-26 20:50:05 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-26 20:50:07 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-26 20:50:07 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-26 20:50:07 [main] INFO  testrunner.BaseTest - Checking admin page.
+2025-03-26 20:50:09 [main] INFO  testrunner.BaseTest - On the add admin page.
+2025-03-26 20:50:09 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-26 20:50:11 [main] INFO  testrunner.BaseTest - Checking admin page.
+2025-03-26 20:50:12 [main] INFO  testrunner.BaseTest - On the add admin page.
+2025-03-26 20:50:20 [main] ERROR testrunner.BaseTest - Test Failed: testAddAdmin
+2025-03-26 20:50:23 [main] ERROR testrunner.BaseTest - Test Failed: testAddAdmin
+2025-03-26 20:50:23 [main] INFO  testrunner.BaseTest - Screenshot captured: test-output/screenshots/testAddAdmin_20250326_205023.png
+2025-03-26 20:51:43 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-26 20:51:48 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-26 20:51:48 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-26 20:51:49 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-26 20:51:51 [main] INFO  testrunner.BaseTest - Checking admin page.
+2025-03-26 20:51:52 [main] INFO  testrunner.BaseTest - On the add admin page.
+2025-03-26 20:53:10 [main] ERROR testrunner.BaseTest - Test Failed: testAddAdmin
+2025-03-26 21:03:46 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-26 21:03:51 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-26 21:03:51 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-26 21:03:52 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-26 21:03:53 [main] INFO  testrunner.BaseTest - Checking admin page.
+2025-03-26 21:03:55 [main] INFO  testrunner.BaseTest - On the add admin page.
