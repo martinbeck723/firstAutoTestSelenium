@@ -10,6 +10,8 @@ public class AdminAddUserPage extends BasePage {
     private By userRoleSelect = By.xpath("//div[label[text()='User Role']]/following-sibling::div//div[contains(@class, 'oxd-select-text-input')]");
     private By statusSelect = By.xpath("//div[label[text()='Status']]/following-sibling::div//div[contains(@class, 'oxd-select-text-input')]");
     private By usernameField = By.xpath("//div[label[text()='Username']]/following-sibling::div//input[contains(@class, 'oxd-input')]");
+    private By passwordField = By.xpath("//div[label[text()='Password']]/following-sibling::div//input[contains(@class, 'oxd-input')]");
+    private By confirmPasswordField = By.xpath("//div[label[text()='Confirm Password']]/following-sibling::div//input[contains(@class, 'oxd-input')]");
 
     //status
     //employee name
@@ -62,6 +64,15 @@ public class AdminAddUserPage extends BasePage {
         sendKeysText(usernameField,username);
     }
 
+    // Method to send text to username field
+    public void textPassowrd(String password) {
+        sendKeysText(passwordField,password);
+    }
+
+    // Method to send text to username field
+    public void textConfirmPassowrd(String password) {
+        sendKeysText(confirmPasswordField,password);
+    }
 
 
 

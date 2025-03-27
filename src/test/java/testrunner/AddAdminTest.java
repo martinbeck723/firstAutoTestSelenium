@@ -72,12 +72,9 @@ public class AddAdminTest extends BaseTest {
         //4username
         adminAddUserPage.textUsername("martin12345mar");
         //5password
-        //        driver.findElement(By.xpath("//input[@type='password']")).click();
-//        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("1234567a");
+        adminAddUserPage.textPassowrd("1234567a");
         //6confirm password
-//        driver.findElement(By.xpath("//div[@id='app']/div/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div[2]/input")).click();
-//        driver.findElement(By.xpath("//div[@id='app']/div/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div[2]/input")).sendKeys("1234567a");
-
+        adminAddUserPage.textConfirmPassowrd("1234567a");
 
 //        driver.findElement(By.xpath("//div[@id='app']/div/div[2]/div[2]/div/div/form/div[2]")).click();
 
