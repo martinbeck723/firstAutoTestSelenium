@@ -16,11 +16,11 @@ public class LoginPage extends BasePage {
 
     // Methods
     public void enterUsername(String username) {
-        sendKeys(usernameField, username);
+        sendKeysText(usernameField, username);
     }
 
     public void enterPassword(String password) {
-        sendKeys(passwordField, password);
+        sendKeysText(passwordField, password);
     }
 
     public void clickLogin() {

@@ -1,5 +1,6 @@
 package pages;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -25,8 +26,13 @@ public class BasePage {
         waitForElementToBeVisible(locator).click();
     }
 
+    // Send key stroke
+    protected void sendKeysNonText (By locator, Keys k) {
+        waitForElementToBeVisible(locator).sendKeys(k);
+    }
+
     // Send text to an input field
-    protected void sendKeys(By locator, String text) {
+    protected void sendKeysText(By locator, String text) {
         WebElement element = waitForElementToBeVisible(locator);
         element.clear();
         element.sendKeys(text);

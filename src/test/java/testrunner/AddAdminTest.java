@@ -55,29 +55,22 @@ public class AddAdminTest extends BaseTest {
 
         logger.info("On the add admin page.");
         //1user role
-
-        // Create explicit wait
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-        // Locate and click the dropdown (Select --)
-        WebElement dropdown = wait.until(ExpectedConditions.elementToBeClickable(
-                By.xpath("//div[contains(@class, 'oxd-select-text-input') and text()='-- Select --']")));
-        dropdown.click();
-        driver.findElement(By.xpath("//div[contains(@class, 'oxd-select-text-input') and text()='-- Select --']")).sendKeys(Keys.ARROW_DOWN);
-        driver.findElement(By.xpath("//div[contains(@class, 'oxd-select-text-input') and text()='-- Select --']")).sendKeys(Keys.ENTER);
-
+        adminAddUserPage.clickUserRole();
+        adminAddUserPage.arrowDownUserRole();
+        adminAddUserPage.enterUserRole();
 
         //2status
-//        driver.findElement(By.xpath("//div[@id='app']/div/div[2]/div[2]/div/div/form/div/div/div[3]/div/div[2]/div/div/div[2]/i")).click();
-        //3employee name
+        adminAddUserPage.clickStatus();
+        adminAddUserPage.arrowDownStatus();
+        adminAddUserPage.enterStatus();
+
+        //3employee name - dynamic select
         //        driver.findElement(By.xpath("//div[@id='app']/div/div[2]/div[2]/div/div/form/div/div/div[2]/div/div[2]/div/div/input")).click();
 //        driver.findElement(By.xpath("//div[@id='app']/div/div[2]/div[2]/div/div/form/div/div/div[2]/div/div[2]/div/div/input")).clear();
 //        driver.findElement(By.xpath("//div[@id='app']/div/div[2]/div[2]/div/div/form/div/div/div[2]/div/div[2]/div/div/input")).sendKeys("adana");
-        //wait then click
 
         //4username
-        //        driver.findElement(By.xpath("//div[@id='app']/div/div[2]/div[2]/div/div/form/div/div/div[4]/div/div[2]/input")).click();
-//        driver.findElement(By.xpath("//div[@id='app']/div/div[2]/div[2]/div/div/form/div/div/div[4]/div/div[2]/input")).sendKeys("mar12345");
+        adminAddUserPage.textUsername("martin12345mar");
         //5password
         //        driver.findElement(By.xpath("//input[@type='password']")).click();
 //        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("1234567a");
