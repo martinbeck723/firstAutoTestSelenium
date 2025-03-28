@@ -36,6 +36,5 @@ build/
 
 ### Mac OS ###
 .DS_Store
-test-output/ExtentReport.html
-test-output/logs/app.log
+test-output/
 
