@@ -448,3 +448,9 @@
 2025-03-28 07:16:31 [main] INFO  testrunner.BaseTest - Checking dashboard page.
 2025-03-28 07:16:32 [main] INFO  testrunner.BaseTest - Checking PIM page.
 2025-03-28 07:16:34 [main] INFO  testrunner.BaseTest - On the add PIM page.
+2025-03-28 07:18:41 [main] INFO  testrunner.BaseTest - Starting the test setup...
+2025-03-28 07:18:46 [main] INFO  testrunner.BaseTest - Navigated to login page.
+2025-03-28 07:18:46 [main] INFO  testrunner.BaseTest - Entering login credentials...
+2025-03-28 07:18:47 [main] INFO  testrunner.BaseTest - Checking dashboard page.
+2025-03-28 07:18:49 [main] INFO  testrunner.BaseTest - Checking PIM page.
+2025-03-28 07:18:51 [main] INFO  testrunner.BaseTest - On the add PIM page.
