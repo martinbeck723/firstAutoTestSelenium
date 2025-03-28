@@ -42,6 +42,8 @@ public class AddPIMTest extends BaseTest {
         pimPage.clickAddButton();
 
         logger.info("On the add PIM page.");
+        pimPage.addName("Oscar","Liu");
+        pimPage.addEmployeeId("asd3");
 
     }
 }
