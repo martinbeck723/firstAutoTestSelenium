@@ -2,10 +2,6 @@ package testrunner;
 
 import com.aventstack.extentreports.Status;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AdminAddUserPage;
@@ -15,7 +11,6 @@ import pages.LoginPage;
 import utils.ExtentManager;
 
 import java.time.Duration;
-import java.util.List;
 
 public class AddAdminTest extends BaseTest {
     LoginPage loginPage;
@@ -65,9 +60,15 @@ public class AddAdminTest extends BaseTest {
         adminAddUserPage.enterStatus();
 
         //3employee name - dynamic select
-        //        driver.findElement(By.xpath("//div[@id='app']/div/div[2]/div[2]/div/div/form/div/div/div[2]/div/div[2]/div/div/input")).click();
-//        driver.findElement(By.xpath("//div[@id='app']/div/div[2]/div[2]/div/div/form/div/div/div[2]/div/div[2]/div/div/input")).clear();
-//        driver.findElement(By.xpath("//div[@id='app']/div/div[2]/div[2]/div/div/form/div/div/div[2]/div/div[2]/div/div/input")).sendKeys("adana");
+        adminAddUserPage.textEmployeeName("sara");
+// Forcefully wait for 10 seconds
+        try {
+            Thread.sleep(3000); // 10 seconds
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        adminAddUserPage.arrowEmployeeName();
+        adminAddUserPage.enterEmployeeName();
 
         //4username
         adminAddUserPage.textUsername("martin12345mar");
@@ -75,8 +76,6 @@ public class AddAdminTest extends BaseTest {
         adminAddUserPage.textPassowrd("1234567a");
         //6confirm password
         adminAddUserPage.textConfirmPassowrd("1234567a");
-
-//        driver.findElement(By.xpath("//div[@id='app']/div/div[2]/div[2]/div/div/form/div[2]")).click();
 
         //submit button
       //  adminAddUserPage.clickSaveButton();

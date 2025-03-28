@@ -12,12 +12,7 @@ public class AdminAddUserPage extends BasePage {
     private By usernameField = By.xpath("//div[label[text()='Username']]/following-sibling::div//input[contains(@class, 'oxd-input')]");
     private By passwordField = By.xpath("//div[label[text()='Password']]/following-sibling::div//input[contains(@class, 'oxd-input')]");
     private By confirmPasswordField = By.xpath("//div[label[text()='Confirm Password']]/following-sibling::div//input[contains(@class, 'oxd-input')]");
-
-    //status
-    //employee name
-    //username
-    //password
-    //confirm password
+    private By employeeNameField = By.xpath("//div[label[text()='Employee Name']]/following-sibling::div//input[@placeholder='Type for hints...']");
 
     // Constructor
     public AdminAddUserPage(WebDriver driver) {
@@ -49,6 +44,11 @@ public class AdminAddUserPage extends BasePage {
         sendKeysNonText(statusSelect, Keys.ARROW_DOWN);
     }
 
+    // Method to arrow down status select
+    public void arrowEmployeeName() {
+        sendKeysNonText(employeeNameField, Keys.ARROW_DOWN);
+    }
+
     // Method to enter user role select
     public void enterUserRole() {
         driver.findElement(userRoleSelect).sendKeys(Keys.ENTER);
@@ -59,12 +59,17 @@ public class AdminAddUserPage extends BasePage {
         driver.findElement(statusSelect).sendKeys(Keys.ENTER);
     }
 
+    // Method to enter user role select
+    public void enterEmployeeName() {
+        driver.findElement(employeeNameField).sendKeys(Keys.ENTER);
+    }
+
     // Method to send text to username field
     public void textUsername(String username) {
         sendKeysText(usernameField,username);
     }
 
-    // Method to send text to username field
+    // Method to send text to password field
     public void textPassowrd(String password) {
         sendKeysText(passwordField,password);
     }
@@ -74,9 +79,10 @@ public class AdminAddUserPage extends BasePage {
         sendKeysText(confirmPasswordField,password);
     }
 
-
-
-
+    // Method to send text to employee name field
+    public void textEmployeeName(String name) {
+        sendKeysText(employeeNameField,name);
+    }
 
 
 }
