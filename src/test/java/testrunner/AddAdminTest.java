@@ -61,7 +61,7 @@ public class AddAdminTest extends BaseTest {
 
         //3employee name - dynamic select
         adminAddUserPage.textEmployeeName("sara");
-// Forcefully wait for 10 seconds
+// Forcefully wait for 3 seconds
         try {
             Thread.sleep(3000); // 10 seconds
         } catch (InterruptedException e) {

@@ -51,5 +51,12 @@ public class AddVacancyTest extends BaseTest {
 
         //on recruitment add vacancies page
         recruitmentAddVacanciesPage.addVacancyName("martin");
+
+        recruitmentAddVacanciesPage.clickJobTitle();
+        recruitmentAddVacanciesPage.arrowDownJobTitle();
+        recruitmentAddVacanciesPage.arrowDownJobTitle();
+        recruitmentAddVacanciesPage.arrowDownJobTitle();
+        recruitmentAddVacanciesPage.enterJobTitle();
+
     }
 }

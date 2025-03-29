@@ -1,5 +1,6 @@
 package pages;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import java.awt.*;
@@ -11,6 +12,8 @@ public class RecruitmentAddVacanciesPage extends BasePage {
     // Locator
 
     private By vacancyNameField = By.xpath("//div[label[text()='Vacancy Name']]/following-sibling::div//input[contains(@class, 'oxd-input')]");
+    private By jobTitleSelect = By.xpath("//div[label[text()='Job Title']]/following-sibling::div//div[contains(@class, 'oxd-select-text-input')]");
+
     private By firstnameField = By.xpath("//input[contains(@name, 'firstName')]");
     private By lastnameField = By.xpath("//input[contains(@name, 'lastName')]");
     private By employeeIdField = By.xpath("//div[label[text()='Employee Id']]/following-sibling::div//input[contains(@class, 'oxd-input')]");
@@ -43,6 +46,25 @@ public class RecruitmentAddVacanciesPage extends BasePage {
     public void addVacancyName( String vacancyName) {
         sendKeysText(vacancyNameField, vacancyName);
     }
+
+    // Method to click on JobTitle select
+    public void clickJobTitle() {
+        click(jobTitleSelect);
+    }
+
+    // Method to arrow down JobTitle select
+    public void arrowDownJobTitle() {
+        sendKeysNonText(jobTitleSelect, Keys.ARROW_DOWN);
+    }
+ 
+    // Method to enter JobTitle
+    public void enterJobTitle() {
+        driver.findElement(jobTitleSelect).sendKeys(Keys.ENTER);
+    }
+
+
+
+
 
     public void addEmployeeId(String id) {
         //need to be unique
