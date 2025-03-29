@@ -9,11 +9,11 @@ import utils.ExtentManager;
 
 import java.awt.*;
 
-public class AddPIMTest extends BaseTest {
+public class AddVacancyTest extends BaseTest {
     LoginPage loginPage;
     DashboardPage dashboardPage;
-    PIMPage pimPage;
-    PIMAddUserPage pimAddUserPage;
+    RecruitmentPage recruitmentPage;
+    RecruitmentAddVacanciesPage recruitmentAddVacanciesPage;
 
     @Test
     public void testAddAdmin() throws AWTException {
@@ -22,8 +22,9 @@ public class AddPIMTest extends BaseTest {
         //initialized before calling the pages
         loginPage = new LoginPage(driver);
         dashboardPage = new DashboardPage(driver);
-        pimPage = new PIMPage(driver);
-        pimAddUserPage = new PIMAddUserPage(driver);
+        recruitmentPage = new RecruitmentPage(driver);
+        recruitmentAddVacanciesPage = new RecruitmentAddVacanciesPage(driver);
+
 
         logger.info("Entering login credentials...");
         test.log(Status.INFO, "Entering login credentials.");
@@ -40,25 +41,15 @@ public class AddPIMTest extends BaseTest {
         String actualText = dashboardPage.getDashboardHeading();
         Assert.assertEquals(actualText, expectedText, "Login failed!");
 
-        logger.info("Checking PIM page.");
-        test.log(Status.INFO, "Navigating to add PIM page.");
-        driver.findElement(By.linkText("PIM")).click();
+        logger.info("Checking Recruitment page.");
+        test.log(Status.INFO, "Navigating to add Recruitment page.");
+        driver.findElement(By.linkText("Recruitment")).click();
+        //click on Vacancies button
+        recruitmentPage.clickVacanciesButton();
+        //click on add button
+        recruitmentPage.clickAddButton();
 
-        pimPage.clickAddButton();
-
-        logger.info("On the add PIM page.");
-        pimAddUserPage.addName("Oscar","Liu");
-        pimAddUserPage.addEmployeeId("asd3");
-        pimAddUserPage.clickLoginDetails();
-
-        pimAddUserPage.textUsername("martin1222");
-
-        pimAddUserPage.textPassowrd("a1234567a");
-
-        pimAddUserPage.textConfirmPassowrd("a1234567a");
-        pimAddUserPage.clickAddImageButton();
-        pimAddUserPage.uploadFileWithRobot("C:\\Users\\liuyuan\\IdeaProjects\\firstAutoTestSelenium\\src\\test\\resources\\21-4.jpg");
-
-
+        //on recruitment add vacancies page
+        recruitmentAddVacanciesPage.addVacancyName("martin");
     }
 }
