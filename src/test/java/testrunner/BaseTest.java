@@ -19,10 +19,15 @@ public class BaseTest {
     protected static final Logger logger = LogManager.getLogger(BaseTest.class);
 
     @BeforeClass
-    public void setUp() {
-        logger.info("Starting the test setup...");
+    @Parameters({"browser"})
+    public void setUp(@Optional("chrome") String browser) {
+        logger.info("Starting test setup on " + browser);
         extent = ExtentManager.getInstance();
-        driver = new ChromeDriver();
+
+        if (browser.equalsIgnoreCase("chrome")) {
+            driver = new ChromeDriver();
+        }
+
         driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         logger.info("Navigated to login page.");
