@@ -4,6 +4,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import com.aventstack.extentreports.ExtentReports;
@@ -19,10 +21,21 @@ public class BaseTest {
     protected static final Logger logger = LogManager.getLogger(BaseTest.class);
 
     @BeforeClass
-    public void setUp() {
-        logger.info("Starting the test setup...");
+    @Parameters({"browser"})
+    public void setUp(@Optional("chrome") String browser) {
+        logger.info("Starting test setup on " + browser);
         extent = ExtentManager.getInstance();
-        driver = new ChromeDriver();
+
+        if (browser.equalsIgnoreCase("chrome")) {
+            driver = new ChromeDriver();
+        } else if (browser.equalsIgnoreCase("firefox")) {
+            driver = new FirefoxDriver();
+        } else if (browser.equalsIgnoreCase("edge")) {
+            driver = new EdgeDriver();
+        } else {
+            throw new IllegalArgumentException("Browser not supported: " + browser);
+        }
+
         driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         logger.info("Navigated to login page.");
@@ -43,8 +56,8 @@ public class BaseTest {
 
     @AfterClass
     public void tearDown() {
-        logger.info("Closing the browser...");
-        driver.quit();
+        //logger.info("Closing the browser...");
+        //driver.quit();
         ExtentManager.flushReport();
     }
 }

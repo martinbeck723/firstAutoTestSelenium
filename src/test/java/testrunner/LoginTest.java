@@ -1,21 +1,15 @@
 package testrunner;
 
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.DashboardPage;
 import pages.LoginPage;
 import com.aventstack.extentreports.Status;
 import utils.ExtentManager;
-import utils.ExcelUtils;
-
-import java.io.IOException;
 
 public class LoginTest extends BaseTest {
     LoginPage loginPage;
     DashboardPage dashboardPage;
-
-
 
     @Test
     public void testLoggingIntoApplication() {
