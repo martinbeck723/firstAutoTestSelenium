@@ -37,8 +37,8 @@ public class BaseTest {
         }
 
         driver.manage().window().maximize();
-        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-        logger.info("Navigated to login page.");
+        driver.get("https://www.utoronto.ca/");
+        logger.info("Navigated to U of T main page.");
     }
 
     @AfterMethod
